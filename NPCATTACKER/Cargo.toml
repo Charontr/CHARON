@@ -1,0 +1,13 @@
+[package]
+name = "npc-attackers"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+oxide-rust = "0.5.1"
+rustc-serialize = { version = "0.3.24", optional = true }
+ujson = { version = "0.12.1", optional = true }
+
+[features]
+default = ["npclib"]
+npclib = ["rustc-serialize", "ujson"]
